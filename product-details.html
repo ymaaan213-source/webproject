@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر العالمي - تفاصيل المنتج</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+     <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-store"></i>
+                    <span>متجر العالمي</span>
+
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                        <li><a href="products.html"><i class="fas fa-box-open"></i> المنتجات</a></li>
+                        <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> السلة <span class="cart-count">0</span></a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
+                        <li><a href="login.html"><i class="fas fa-user"></i> تسجيل الدخول</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container main-content">
+        <div class="product-details">
+            <div class="product-gallery">
+                <img src="images/1.jpg" alt="ايفون 16 برو ماكس" id="main-image">
+                <div class="product-thumbnails">
+                    <img src="images/3.jpg" alt="ايفون 16 برو ماكس" class="thumbnail">
+                    <img src="images/1.jpg" alt="ايفون 16 برو ماكس" class="thumbnail">
+                    <img src="images/2.jpg" alt="ايفون 16 برو ماكس" class="thumbnail">
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <h1 class="product-title">ايفون 16 برو ماكس</h1>
+                <div class="product-price">السعر : 700$</div>
+
+                
+                <p class="product-description">
+                    ايفون 16 برو ماكس متجر العالمي
+                </p>
+                
+                <div class="product-specs">
+                    <h3>المواصفات:</h3>
+                    <ul>
+                        <li>شاشة  مقاس 6.7 بوصة</li>
+                        <li>سعة تخزين 256GB</li>
+                        <li>شريحة رسمي</li>
+                        <li>مقاوم للماء والغبار </li>
+                    </ul>
+                </div>
+
+                
+                <div class="product-actions">
+                    <div class="quantity">
+                        <label for="quantity">الكمية:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    </div>
+                    <button class="btn add-to-cart">إضافة الى السلة</button>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <script>
+
+        // تغيير الصورة الرئيسية عند النقر على الصور المصغرة
+        document.querySelectorAll('.thumbnail').forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                document.getElementById('main-image').src = this.src;
+            });
+        });
+    </script>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عن المتجر</h3>
+                    <p>مشروع يوسف المؤيد متجر الكتروني</p>
+                </div>
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                        <li><a href="products.html"><i class="fas fa-box-open"></i> المنتجات</a></li>
+                        <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> السلة</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                </div>
+            </div>
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة &copy; 2025 متجر العالمي</p>
+                <p>مع تحيات يوسف المؤيد</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر العالمي - إنشاء حساب</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-store"></i>
+                    <span>متجر العالمي</span>
+
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                        <li><a href="products.html"><i class="fas fa-box-open"></i> المنتجات</a></li>
+                        <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> السلة <span class="cart-count">0</span></a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
+                        <li><a href="login.html"><i class="fas fa-user"></i> تسجيل الدخول</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container main-content">
+        <div class="auth-container">
+            <h1 class="section-title">إنشاء حساب جديد</h1>
+            
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="signup-name">الاسم الكامل</label>
+                    <input type="text" id="signup-name" class="form-control" placeholder="أدخل اسمك الكامل" required>
+                    <div class="error-message" id="signup-name-error">الاسم مطلوب</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signup-email">البريد الإلكتروني</label>
+                    <input type="email" id="signup-email" class="form-control" placeholder="أدخل بريدك الإلكتروني" required>
+                    <div class="error-message" id="signup-email-error">البريد الإلكتروني غير صحيح</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signup-phone">رقم الهاتف</label>
+                    <input type="tel" id="signup-phone" class="form-control" placeholder="أدخل رقم هاتفك" required>
+                    <div class="error-message" id="signup-phone-error">رقم الهاتف مطلوب</div>
+                </div>
+                
+                <div class="form-group">
+
+                    <label for="signup-password">كلمة المرور</label>
+                    <input type="password" id="signup-password" class="form-control" placeholder="أنشئ كلمة مرور قوية" required>
+                    <div class="error-message" id="signup-password-error">كلمة المرور يجب أن تحتوي على 8 أحرف على الأقل</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signup-confirm-password">تأكيد كلمة المرور</label>
+                    <input type="password" id="signup-confirm-password" class="form-control" placeholder="أعد إدخال كلمة المرور" required>
+                    <div class="error-message" id="signup-confirm-password-error">كلمة المرور غير متطابقة</div>
+                </div>
+
+                
+                
+                
+                <button type="submit" class="btn btn-block">انشاء حساب</button>
+                
+                <div class="auth-links">
+                    <p>لديك حساب بالفعل <a href="login.html">سجل الدخول</a></p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                   <h3>عن المتجر</h3>
+                    <p>مشروع يوسف المؤيد متجر الكتروني</p>
+                </div>
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                        <li><a href="products.html"><i class="fas fa-box-open"></i> المنتجات</a></li>
+                        <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> السلة</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
+                    </ul>
+                </div>
+               
+            </div>
+
+            <div class="copyright">
+               <p>جميع الحقوق محفوظة &copy; 2025 متجر العالمي</p>
+                <p>مع تحيات يوسف المؤيد</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
